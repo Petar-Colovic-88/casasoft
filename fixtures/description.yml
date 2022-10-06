@@ -1,0 +1,6 @@
+App\Entity\Description:
+  description_{1..200}:
+    property: "@property_*"
+    content: <sentence(10)>
+    language: <randomElement(['en', 'de', 'fr'])>
+    createdAt: <datetimeBetween('-50 days', 'now')>

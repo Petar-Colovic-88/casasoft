@@ -1,0 +1,10 @@
+App\Entity\Property:
+  property_{1..200}:
+    user: "@user_*"
+    name: <name()>
+    city: <randomElement(['Zurich', 'Berlin', 'Paris'])>
+    street: <address()>
+    price: <randomFloat(1, 100000, 1000000)>
+    numberOfRooms: <numberBetween(1, 9)>
+    status: <randomElement(['ACTIVE', 'DELETED', 'RENTED'])>
+    createdAt: <datetimeBetween('-50 days', 'now')>

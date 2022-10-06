@@ -1,0 +1,17 @@
+# IDEs and editors
+/.idea
+/.vscode
+
+# symfony
+/.env
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+
+###> lexik/jwt-authentication-bundle ###
+/config/jwt
+###< lexik/jwt-authentication-bundle ###

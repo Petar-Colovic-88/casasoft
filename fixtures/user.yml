@@ -1,0 +1,25 @@
+App\Entity\User:
+  admin:
+    name: 'Admin'
+    email: 'admin@email.com'
+    password: '\$2y\$13\$t6vXoQbxJea2s0UD1lVH/.bXIWn3yIJJo3vag92/d.zwVE6nAXbIS' # password
+    role: 'ROLE_ADMIN'
+    createdAt: <datetimeBetween('-50 days', 'now')>
+  manager:
+    name: 'Manager'
+    email: 'manager@email.com'
+    password: '\$2y\$13\$t6vXoQbxJea2s0UD1lVH/.bXIWn3yIJJo3vag92/d.zwVE6nAXbIS' # password
+    role: 'ROLE_MANAGER'
+    createdAt: <datetimeBetween('-50 days', 'now')>
+  agent:
+    name: 'Agent'
+    email: 'agent@email.com'
+    password: '\$2y\$13\$t6vXoQbxJea2s0UD1lVH/.bXIWn3yIJJo3vag92/d.zwVE6nAXbIS' # password
+    role: 'ROLE_AGENT'
+    createdAt: <datetimeBetween('-50 days', 'now')>
+  user_{1..10}:
+    name: <name()>
+    email: <email()>
+    password: '\$2y\$13\$t6vXoQbxJea2s0UD1lVH/.bXIWn3yIJJo3vag92/d.zwVE6nAXbIS' # password
+    role: <randomElement(['ROLE_ADMIN', 'ROLE_MANAGER', 'ROLE_AGENT'])>
+    createdAt: <datetimeBetween('-50 days', 'now')>
